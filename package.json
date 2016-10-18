@@ -1,0 +1,26 @@
+{
+  "name": "milkcocoa-tool",
+  "version": "1.0.0",
+  "description": "milkcocoa-tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "milkcocoa-tool": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milk-cocoa/milkcocoa-tool.git"
+  },
+  "author": "Shuhei Hiya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/milk-cocoa/milkcocoa-tool/issues"
+  },
+  "homepage": "https://github.com/milk-cocoa/milkcocoa-tool#readme",
+  "dependencies": {
+    "milkcocoa": "^0.6.0",
+    "minimist": "^1.2.0"
+  }
+}
