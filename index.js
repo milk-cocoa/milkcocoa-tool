@@ -13,13 +13,13 @@ if(!argv.app_id) throw new Error('--app_id app_id required.');
 var host = argv.host || (argv.app_id + '.mlkcca.com');
 
 if(argv.apikey && argv.apisecret) {
-	var milkcocoa = new MilkCocoa(argv.app_id, {
-		host: host
-	});
-}else{
 	var milkcocoa = MilkCocoa.connectWithApiKey(argv.app_id, argv.apikey, argv.apisecret, {
 		host: host
 	});	
+}else{
+	var milkcocoa = new MilkCocoa(argv.app_id, {
+		host: host
+	});
 }
 
 var cmd = argv['_'][0];
